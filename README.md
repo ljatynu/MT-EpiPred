@@ -45,9 +45,9 @@ python test_valid_per_task.py
 
 ## Reference
 ```
-@article{guo2021few,
-  title={xxx},
-  author={xxx},
+@article{MT-EpiPred,
+  title={MT-EpiPred: Multitask learning for prediction of small-molecule epigenetic modulators},
+  author={Ruihan Zhang‡, Xingran Xie‡, Dongxuan Ni‡, Jing Li*, Weilie Xiao*},
   journal={xxx},
   year={2023}
 }
