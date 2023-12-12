@@ -1,6 +1,6 @@
 import argparse
 
-parser = argparse.ArgumentParser(description='PyTorch implementation of pre-training of graph neural networks')
+parser = argparse.ArgumentParser(description='PyTorch implementation of MT-EpiPred')
 parser.add_argument('--device', type=int, default=0,
                     help='which gpu to use if any (default: 0)')
 parser.add_argument('--batch_size', type=int, default=128,
@@ -9,12 +9,12 @@ parser.add_argument('--batch_size_eval', type=int, default=128,
                     help='input batch size for test (default: 128)')                     
 
 parser.add_argument('--lr', type=float, default=0.00005,
-                    help='learning rate (default: 0.001)')
+                    help='learning rate (default: 0.00005)')
 parser.add_argument('--decay', type=float, default=0.002,
                     help='weight decay (default: 0.002)')
 
 parser.add_argument('--emb_dim', type=int, default=1024,
-                    help='embedding dimensions (default: 300)')
+                    help='embedding dimensions (default: 1024)')
 parser.add_argument('--dropout_ratio', type=float, default=0.5,
                     help='dropout ratio (default: 0.5)')
 
@@ -24,7 +24,7 @@ parser.add_argument('--num_workers', type=int, default = 4, help='number of work
 
 
 parser.add_argument('--layer_size', type=str, default='moderate',
-                    help='size of bond(shared) layers(shallow, moderate, deep, task_relate), default "deep"')
+                    help='size of bond(shared) layers(shallow, moderate, deep, task_relate), default "moderate"')
 
 args = parser.parse_args()
 
