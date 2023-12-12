@@ -177,7 +177,7 @@ class Mtask_model(nn.Module):
 
         y_true = torch.cat(y_true, dim = 0).cpu().detach().numpy()
         y_scores = torch.cat(y_scores, dim = 0).cpu().detach().numpy()
-        y_predict = np.squeeze(y_scores)
+        y_predict = np.squeeze(y_scores.copy())
         for idx, val in enumerate(y_predict):
             if val < 0.5 :
                 y_predict[idx] = 0
